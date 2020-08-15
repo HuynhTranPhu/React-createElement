@@ -8,8 +8,8 @@
     <div id="root"></div>
     <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
-    
-    <script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
         // const Hello = React.createElement('div', null,'Hello world!');
         // const root  = document.getElementById('root');
         // ReactDOM.render(Hello,root);
@@ -17,13 +17,82 @@
 
         //const Book = React.createElement('ul',null, 'All of book I love');
 
-        const listBook1 = React.createElement('li',null,'Cha giàu cha nghèo')
-        const listBook2 = React.createElement('li',null,'Tôi thấy hoa vàng trên cỏ xanh')
-        const listBook3 = React.createElement('li',null,'Tôi đi code dạo')
-        const listBook4 = React.createElement('li',null,'Hẹn một mai')
-        const App = React.createElement('ul',null,listBook1,listBook2,listBook3,listBook4);
+        // const listBook1 = React.createElement('li',null,'Cha giàu cha nghèo')
+        // const listBook2 = React.createElement('li',null,'Tôi thấy hoa vàng trên cỏ xanh')
+        // const listBook3 = React.createElement('li',null,'Tôi đi code dạo')
+        // const listBook4 = React.createElement('li',null,'Hẹn một mai')
+        // const App = React.createElement('ul',null,listBook1,listBook2,listBook3,listBook4);
+
+                const schedule = (
+                <table>
+                        <tr>
+                            <th>Time</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th> 
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                            <th>Saturday</th>
+                            <th>Sunday</th>
+                        </tr>
+                        <tr>
+                            <td>10:00</td>
+                            <td>Math</td>
+                            <td>History</td>
+                            <td>History</td>
+                            <td>History</td>
+                            <td>History</td>
+                            <td>History</td>
+                            <td>History</td>
+                        </tr>
+                        <tr>
+                            <td>11:00</td>
+                            <td>Math</td>
+                            <td>History</td>
+                            <td>History</td>
+                            <td>History</td>
+                            <td>History</td>
+                            <td>History</td>
+                            <td>History</td>
+                        </tr>
+                        <tr>
+                            <td>13:00</td>
+                            <td>Math</td>
+                            <td>History</td>
+                            <td>History</td>
+                            <td>History</td>
+                            <td>History</td>
+                            <td>History</td>
+                            <td>History</td>
+                        </tr>
+                        <tr>
+                            <td>14:00</td>
+                            <td>Math</td>
+                            <td>History</td>
+                            <td>History</td>
+                            <td>History</td>
+                            <td>History</td>
+                            <td>History</td>
+                            <td>History</td>
+                        </tr>
+                        <tr>
+                            <td>15:00</td>
+                            <td>Math</td>
+                            <td>History</td>
+                            <td>History</td>
+                            <td>History</td>
+                            <td>History</td>
+                            <td>History</td>
+                            <td>History</td>
+                        </tr>
+                
+                </table>
+                )
+
+
+
         const root  = document.getElementById('root');
-        ReactDOM.render(App,root);
+        ReactDOM.render(schedule,root);
     </script>
 
     
